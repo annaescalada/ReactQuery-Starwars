@@ -3,8 +3,8 @@ import React from 'react'
 const Navbar = ({ page, setPage }) => {
     return (
         <nav>
-            <button onClick={() => setPage('planets')}>Planets</button>
-            <button onClick={() => setPage('people')}>People</button>
+            <button className={page === 'planets' ? 'active' : ''} onClick={() => setPage('planets')}>Planets</button>
+            <button className={page === 'people' ? 'active' : ''} onClick={() => setPage('people')}>People</button>
         </nav>
     )
 }
